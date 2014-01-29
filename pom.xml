@@ -70,6 +70,20 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.cloudfoundry</groupId>
+                <artifactId>cf-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <server>cloud-foundry</server>
+                    <target>http://api.run.pivotal.io</target>
+                    <url>spring4-web.cfapps.io</url>
+                    <memory>512</memory>
+                    <org>MLBAM</org>
+                    <space>development</space>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
